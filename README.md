@@ -25,7 +25,7 @@ Science, University of Osnabrück, 2026).
 
 ## Requirements
 
-Python 3.13 with numpy, pandas, scipy, statsmodels and matplotlib.
+Python 3.13.7 with numpy 2.4.6, pandas 3.0.3, scipy 1.18.0, statsmodels 0.14.6 and matplotlib 3.11.0.
 
 ## Data
 

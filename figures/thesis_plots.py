@@ -73,9 +73,7 @@ def forest(coeffs, fname):
                 transform=ax.get_yaxis_transform(),
                 va="center",ha="left",fontsize=10.3,color="#333")
     ax.set_yticks(ys); ax.set_yticklabels([LABELS[t] for t in terms],fontsize=11.5)
-    ax.set_xlabel("Effect on log(RT), coefficient with 95% CI\n"
-                  "(% = RT change per one coefficient unit: a full contrast for the\n"
-                  "±0.5-coded terms, one intensity step, or 1 SD for z_trial)")
+    ax.set_xlabel("Effect on log(RT), coefficient with 95% CI")
     ax.set_xlim(min(-0.05,min(coeffs[t]["lo"] for t in terms)-0.02),
                max(0.14, max(coeffs[t]["hi"] for t in terms)+0.02))
     ax.margins(y=0.08); ax.grid(axis="y",visible=False)

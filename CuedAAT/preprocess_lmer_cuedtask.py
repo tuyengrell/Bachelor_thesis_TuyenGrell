@@ -631,7 +631,7 @@ if ET_EXCLUSION_ENABLED and _et_available and n_et_excluded > 0:
 
 
 if n_after_acc is not None and n_after_acc < n_after_et:
-    funnel_labels.append("Accuracy\n(errors + subj < 90%)")
+    funnel_labels.append("Error trials\n(+ subj < 90% accuracy)")
     funnel_vals.append(n_after_acc)
 funnel_labels += ["RT < 150 ms", "±2.5 SD outliers"]
 funnel_vals   += [n_after_cutoff, n_after_sd]

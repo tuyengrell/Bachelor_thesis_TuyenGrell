@@ -385,7 +385,7 @@ if n_nan_rt:
     funnel_labels.append("NaN / no response")
 if n_after_acc is not None:
     funnel_vals.append(n_after_acc)
-    funnel_labels.append(f"Accuracy\n(errors + subj < {ACCURACY_MIN_PCT:.0f}%)")
+    funnel_labels.append(f"Error trials\n(+ subj < {ACCURACY_MIN_PCT:.0f}% accuracy)")
 funnel_vals   += [n_after_cutoff, n_after_sd]
 funnel_labels += [f"RT < {MIN_RT_MS:.0f} ms", f"±{N_SD} SD outliers"]
 if n_final != n_after_sd:

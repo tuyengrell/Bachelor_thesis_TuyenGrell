@@ -732,7 +732,7 @@ if low_subj:
 print(f"   FINAL (for LMER)                        | {n_final:>5} ")
 
 # === Plot exclusion counts ===
-funnel_labels = ["Raw", "NaN / zero"]
+funnel_labels = ["Raw", "NaN / no response"]
 funnel_vals   = [n_raw, n_after_nan_rp]
 if _et_available and n_premature_excluded > 0:
     funnel_labels.append("Pre-onset gaze")
@@ -741,7 +741,7 @@ if _et_available and n_et_excluded > 0:
     funnel_labels.append("No picture dwell")
     funnel_vals.append(n_after_et)
 if DROP_INSTRUCTION_ERRORS and n_after_err < n_after_et:
-    funnel_labels.append("Instruction errors")
+    funnel_labels.append("Error trials")
     funnel_vals.append(n_after_err)
 funnel_labels += ["RT < 150 ms", "±2.5 SD outliers"]
 funnel_vals   += [n_after_cutoff, n_after_sd]
